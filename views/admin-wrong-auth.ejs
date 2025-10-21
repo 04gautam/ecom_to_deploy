@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Authentication Failed — Alert</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link href="/css/output.css" rel="stylesheet">
+    
+  </head>
+  <body class="min-h-screen bg-gray-900 flex items-center justify-center p-6">
+
+    <!-- Alert card -->
+    <main class="w-full max-w-md text-center">
+      <section class="glass border border-red-700 rounded-2xl shadow-2xl p-8 md:p-10 text-black">
+        <div class="flex flex-col items-center space-y-4">
+
+          <!-- Icon -->
+          <div class="h-16 w-16 rounded-full bg-red-600 flex items-center justify-center ring-1 ring-red-600/40">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.72-1.36 3.485 0l5.516 9.811c.75 1.333-.213 2.99-1.742 2.99H4.483c-1.529 0-2.492-1.657-1.742-2.99L8.257 3.1zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-3a1 1 0 00-.993.883L9 11v1a1 1 0 102 0v-1a1 1 0 00-.993-.883L11 10z" clip-rule="evenodd" />
+            </svg>
+          </div>
+
+          <!-- Message -->
+          <h1 class="text-2xl font-semibold tracking-tight text-red-100">Authentication Failed</h1>
+          <p class="text-red-200/90">Your username or password is incorrect.</p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 mt-4 w-full justify-center">
+            <a href="/owner/stark" class="px-5 py-2 rounded-lg bg-red-600 hover:bg-red-700 transition shadow-sm">Try Again</a>
+            <a href="/reset-password" class="px-5 py-2 rounded-lg border border-red-600 hover:bg-red-600 transition">Reset Password</a>
+          </div>
+
+          <p class="text-xs text-red-100/60 mt-4">If you continue to face this issue, please <a href="/support" class="underline">contact support</a>.</p>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

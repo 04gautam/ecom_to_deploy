@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+
+  <header class="fixed top-0 left-0 right-0 bg-gray-800 shadow-md py-4 z-50">
+    <div class="container mx-auto flex justify-between items-center pl-4 pr-2">
+      <!-- Logo -->
+      <a href="#" class="text-2xl border-b border-white font-bold text-white">STARK Technologies</a>
+              
+    
+      <!-- Navigation Links -->
+      
+    </div>
+  </header>
+
+
+
+    <main class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Create New Product</h1>
+        <form action="/admin/proinfo" method="post" enctype="multipart/form-data" class="space-y-4">
+            <input type="file" name="image" class="w-full p-2 border border-gray-300 rounded-lg">
+            
+            <input type="text" placeholder="Product" name="name" required 
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            
+            <textarea name="discription" placeholder="Enter Product Info." required
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <input type="text" placeholder="Product Price" name="price" required 
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                
+                <input type="text" placeholder="Discount Price" name="discount" required 
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            
+            <button type="submit" class="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-lg text-lg font-semibold hover:from-indigo-600 hover:to-purple-600 transition">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

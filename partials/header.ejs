@@ -1,0 +1,45 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="fixed top-0 left-0 right-0 bg-gray-800 shadow-md py-4 z-50">
+    <div class="container mx-auto flex justify-between items-center pl-4 pr-2">
+      <!-- Logo -->
+      <a href="/shop" class="text-2xl border-b border-white font-bold text-white">STARK</a>
+             
+      <form class="lg:w-full md:w-full h-6 flex items-center justify-center" action="/filter" method="get">
+
+       <input name="filterItem" placeholder="Search Items.." type="text" class=" p-4 rounded-md ml-2 h-full w-32 lg:w-1/2 md:w-1/2 text-black" required> 
+      
+       <button class="border-l-2 p-1 text-center border-black mr-2 bg-white rounded" type="submit">
+        <i class="fa fa-search">
+        </i>
+      </button>
+</form>
+   
+    
+   
+      <nav class="flex gap-x-3 mr-2">
+        <!-- <a href="/shop" class="hover:text-gray-300 text-white">Shop</a> -->
+        <!-- <a href="/cart" class="hover:text-gray-300 text-white "><i title="cart" class="fa fa-shopping-cart" style="font-size:24px"></i></a> -->
+         <div class="relative inline-block">
+  <a href="/cart" class="hover:text-gray-300 text-white "><i class="fa fa-shopping-cart text-6xl text-gray-700" style="font-size:24px"></i>
+  <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
+  0
+  </span>
+</div></a>
+
+        <a href="/logout" class="text-red-500 hover:text-red-400">Logout</a>
+      </nav>
+    
+      <!-- Navigation Links -->
+      
+    </div>
+  </header>
